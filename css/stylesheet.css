@@ -1,0 +1,435 @@
+body {
+  color: #4c4d4d;
+  font-family: "Poppins", sans-serif;
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+}
+
+header {
+  z-index: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/intro-bg.jpg);
+  background-size: cover; /* Cover the entire area while maintaining aspect ratio */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-attachment: fixed;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-section {
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+/* style.css */
+.navbar .vav-fixed {
+  background-color: #333333; /* Custom background color */
+}
+
+.navbar .navbar-brand {
+  color: #ffffff; /* Custom brand color */
+}
+
+/* Custom styles for the active nav-link */
+.navbar .navbar-nav .nav-link.active {
+  color: #20c997 !important; /* Set the text color for the active link */
+  font-weight: bold; /* Make the active link bold */
+  padding-top: 10px; /* Ensure consistent top padding */
+  padding-bottom: 10px; /* Ensure consistent bottom padding */
+}
+
+/* General nav-link styles for non-active links */
+.navbar .navbar-nav .nav-link {
+  color: #ffffff; /* Default text color for non-active links */
+  padding-top: 10px; /* Consistent top padding */
+  padding-bottom: 10px; /* Consistent bottom padding */
+}
+
+/* Hover state for non-active links */
+.navbar .navbar-nav .nav-link:hover {
+  color: #20c997; /* Change color on hover to match active state */
+}
+
+.navbar-nav .nav-item {
+  margin-bottom: 0; /* Adjust the bottom margin if necessary */
+}
+
+.navbar-nav .nav-link {
+  padding-top: 10px; /* Adjust the top padding of the links */
+  padding-bottom: 10px; /* Adjust the bottom padding of the links */
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 18px;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a.facebook:hover {
+  color: #3b5998; /* Facebook brand color */
+}
+
+/* Hover styles for Twitter icon */
+.social-icons a.twitter:hover {
+  color: #1da1f2; /* Twitter brand color */
+}
+
+/* Hover styles for Instagram icon */
+.social-icons a.instagram:hover {
+  color: #e1306c; /* Instagram brand color */
+}
+
+.text-7 {
+  font-size: 1.75rem !important;
+}
+
+.text-16 {
+  font-size: calc(1.525rem + 3.3vw) !important;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+.fw-500 {
+  font-weight: 500 !important;
+}
+
+.text-5 {
+  font-size: 21px !important;
+  font-size: 1.3125rem !important;
+}
+.text-light {
+  color: #dee3e4 !important;
+}
+
+.btn {
+  padding: 0.8rem 2.6rem;
+  font-weight: 500;
+  border-width: 2px;
+  transition: all 0.5s ease;
+  --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.btn-outline-primary {
+  color: #20c997;
+  border-color: #20c997;
+}
+
+.btn-primary {
+  background-color: #20c997;
+  border-color: #20c997;
+  color: #fff;
+}
+
+.btn-outline-primary:hover {
+  background-color: #20c997;
+  border-color: #20c997;
+  color: #fff;
+}
+.btn:not(.btn-link) {
+  -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
+.btn-primary:hover {
+  background-color: #20c997;
+  border-color: #20c997;
+  color: #fff;
+}
+
+.text-24 {
+  font-size: 5rem !important;
+}
+
+.text-9 {
+  font-size: 2.25rem !important;
+}
+.border-primary {
+  border-color: #20c997 !important;
+}
+.heading-separator-line {
+  width: 80px;
+}
+p {
+  line-height: 1.8;
+}
+.border-3 {
+  --bs-border-width: 3px;
+}
+.text-primary {
+  color: #20c997 !important;
+}
+p {
+  line-height: 1.8;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+a {
+  color: #20c997;
+}
+.list-style-2 {
+  list-style-type: none;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.text-12 {
+  line-height: 1.3;
+  font-size: calc(1.425rem + 2.1vw) !important;
+}
+
+.text-muted {
+  --bs-text-opacity: 1;
+  color: #6c757d !important;
+}
+.featured-box {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.bg-custom {
+  background: #ddddddae;
+}
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px; /* Spacing between items */
+}
+
+.portfolio-item {
+  padding: 5px; /* Optional: Add space around each image */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.portfolio-item img {
+  width: 100%; /* Make sure the image takes full width of the container */
+  height: auto; /* Allow the height to adjust based on the image's aspect ratio */
+  display: block; /* Remove any extra space at the bottom of the image */
+}
+
+.d-block {
+  display: block !important;
+}
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+/* Ensure the container maintains its size */
+.img-card {
+  overflow: hidden; /* Hide the parts of the image that go outside the container */
+  position: relative; /* Ensure positioning context for the text overlay */
+}
+
+/* Style the image */
+.img-card img {
+  width: 100%; /* Make sure the image takes full width of the container */
+  height: auto; /* Allow the height to adjust based on the image's aspect ratio */
+  display: block; /* Remove any extra space at the bottom of the image */
+  transition: transform 0.5s ease; /* Smooth transition for the zoom effect */
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style the text overlay */
+.img-text {
+  position: absolute; /* Position absolutely within the .img-card */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0
+  ); /* Ensure the initial background is transparent */
+  color: white; /* Make sure the text is white */
+  z-index: 2; /* Ensure the text overlay is above the image */
+}
+
+/* Hover effect - apply hover on parent container */
+.img-card:hover img {
+  transform: scale(1.2); /* Scale the image by 1.2 times its original size */
+}
+
+.img-card:hover .img-text {
+  background-color: rgba(0, 0, 0, 0.7); /* Darken the background */
+  opacity: 1; /* Show the text */
+}
+
+.featured-box-icon {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 55px;
+  min-height: 55px;
+  margin-bottom: 0;
+  font-size: 30px;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+  text-align: center;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.featured-box.style-3 {
+  padding-left: 90px;
+  padding-top: 0px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+  color: #252b33;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.featured-box h3,
+.featured-box h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #252b33;
+}
+
+.bg-primary {
+  background-color: #20c997 !important;
+}
+
+.badge {
+  color: white;
+  --bs-badge-padding-x: 0.65em;
+  --bs-badge-padding-y: 0.35em;
+  --bs-badge-font-size: 0.75em;
+  --bs-badge-font-weight: 700;
+  --bs-badge-color: #fff;
+  --bs-badge-border-radius: 0.375rem;
+  display: inline-block;
+  padding: var(--bs-badge-padding-y) var(--bs-badge-padding-x);
+  font-size: var(--bs-badge-font-size);
+  font-weight: var(--bs-badge-font-weight);
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: var(--bs-badge-border-radius);
+}
+
+.text-5 {
+  font-size: 21px !important;
+  font-size: 1.3125rem !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #252b33;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.progress-bar {
+  background-color: #20c997;
+  line-height: 1.5rem; /* Ensure the text is vertically centered */
+}
+
+.progress-sm {
+  height: 0.5rem !important;
+  width: 100%; /* Ensure it takes the full width */
+}
+
+.text-dark {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.footer {
+  padding: 40px; /* Adjust this as needed */
+  margin-top: 40px; /* Add margin to create more space above */
+  background-color: #f8f9fa; /* Optional: add a background color */
+}
+.footer-link {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1em;
+  font-weight: 500;
+}
+.footer-link:hover,
+.footer-link:focus {
+  color: #1aae83 !important;
+}
+.nav-item-footer {
+  border-style: none;
+}
+.nav-footer-link {
+  text-decoration: none !important;
+  color: var(--dark-color) !important;
+}
+
+.testimonial-card {
+  border: none;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.testimonial-card img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+.testimonial-card .name {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.testimonial-card .role {
+  color: #777;
+}
+.testimonial-card .stars {
+  color: #f5b301;
+}
